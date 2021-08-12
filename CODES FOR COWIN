@@ -21,7 +21,7 @@ FromEmailPass=""         # From Email ID password inside double quote
 ToEmail="vinooalston@gmail.com"  # To Email ID inside double quote
 
 
-message = """From:m.vchandrahas@gmail.com 
+message = """From:vinooalan@gmail.com 
 To: vinooalston@gmail.com
 Subject: Vaccine Available
 """

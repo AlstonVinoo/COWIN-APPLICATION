@@ -8,7 +8,7 @@ d=datetime.datetime.today().strftime('%d-%m-%Y')
 age=18   
 
 # No of people                                                  
-tot=3
+tot=4
 
 # Type of vaccination : COVISHIELD, COVAXIN ...                                                
 vacc="COVISHIELD"
@@ -38,7 +38,7 @@ for k in range(len(pincodes)):
         print(response.json()["centers"][i-1]["sessions"][j-1]["vaccine"])
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        s.login("m.vchandrahas@gmail.com", "")#password
+        s.login("vinooalan@gmail.com", "")#password
         str1=response.json()["centers"][i-1]["name"]
         str2=response.json()["centers"][i-1]["sessions"][j-1]["available_capacity"]
         message= (message+ "\n" +	"Center name : " + str1 + "\n"+"Available :" + str(str2) + "\n")
